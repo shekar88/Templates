@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.main {
+  display: inline-block;
+  position:relative;
+  width:400px;
+  height:400px;
+  background: black;
+  box-sizing:border-box;
+  padding:55px;
+  clip-path: polygon(0 4%, 100% 13%, 99% 68%, 1% 78%);
+}
+.main img {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+    clip-path: polygon(0 4%, 100% 13%, 99% 68%, 1% 78%);
+}
+
+.main1 {
+  display: inline-block;
+  position:relative;
+  width:400px;
+  height:400px;
+  background: black;
+  box-sizing:border-box;
+  padding:55px;
+  clip-path: polygon(0 32%, 100% 14%, 100% 87%, 0 78%);
+}
+
+.main1 img {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+    clip-path: polygon(0 32%, 100% 14%, 100% 87%, 0 78%);
+}
+
+.middle {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+}
+
+</style>
+
+<body>
+      <div class="main1" style="border: 2px solid red;">
+          <div class="slider-div">
+            <img src="images/bg-banner-1.jpg" name="slider" width="100%" height="auto" id="img-1">  
+          </div>
+      </div>
+      <div class="middle">
+        <img src="images/changing-img.jpg" id="img-2" name="slider" width="100%" height="auto">
+      </div>
+      <div class="main">
+        <img src="images/bg-banner-2.jpg" id="img-3" name="slider" width="100%" height="auto">
+      </div>
+    
+
+<script type="text/javascript">
+window.onload=function(){
+  setInterval(changeImage1,3000);
+  setInterval(changeImage2,3000);
+  setInterval(changeImage3,3000);
+}
+
+/*Main Slider-1*/
+var image1 = document.getElementById('img-1');
+var image2 = document.getElementById('img-2');
+var image3 = document.getElementById('img-3');
+
+var imageArray1=['./images/changing-img.jpg','./images/bg-banner-2.jpg','./images/bg-banner-1.jpg'];
+var imageArray2=['./images/bg-banner-2.jpg','./images/bg-banner-1.jpg','./images/changing-img.jpg'];
+var imageArray3=['./images/bg-banner-1.jpg','./images/changing-img.jpg','./images/bg-banner-2.jpg'];
+
+var imageIndex1 = 0;
+var imageIndex2 = 0;
+var imageIndex3 = 0;
+
+function changeImage1() 
+  {
+    image1.setAttribute("src",imageArray1[imageIndex1]);
+    imageIndex1++;
+    if (imageIndex1 >= imageArray1.length) {
+      imageIndex1 = 0;
+  }
+}
+
+function changeImage2() 
+  {
+    image2.setAttribute("src",imageArray2[imageIndex2]);
+    imageIndex2++;
+    if (imageIndex2 >= imageArray2.length) {
+      imageIndex2 = 0;
+  }
+}
+
+function changeImage3() 
+  {
+    image3.setAttribute("src",imageArray3[imageIndex3]);
+    imageIndex3++;
+    if (imageIndex3 >= imageArray3.length) {
+      imageIndex3 = 0;
+  }
+}
+    </script>
+</body>
+</html>
