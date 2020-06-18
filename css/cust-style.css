@@ -1,0 +1,427 @@
+/*
+The Purpose of the Stylesheet is to add the styling to "header-1"
+@ version 0.0.1
+*/
+
+/*
+	Created on : <18th-Sep-2019>
+    Author     : <csk>
+*/
+
+/* Table of Content
+
+	1.	Menu
+	2.  Banner
+
+*/
+.open-sans {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.open-sans-cond {
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+}
+
+.quick-sand {
+	/*font-family: 'Quicksand', sans-serif;*/
+	font-family: 'Quicksand', sans-serif;
+}
+body {}
+
+.bold-cls {
+	font-weight: bold;
+}
+
+.italic-cls {
+	font-style: italic;
+}
+
+.bg-prim {
+	width: 100%;
+	height: 160px;
+	background-color: rgb(10,60,93);
+}
+
+.top-reach-us {
+	width: 30%;
+	color: white;
+	text-align: right;
+}
+
+.top-reach-us {
+	display: flex;
+	justify-content: space-between;
+}
+.top-contact,
+.top-mail {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 47%;
+}
+
+.top-contact img {
+	width: 16%;
+}
+
+.top-mail img {
+	width: 20%;
+}
+
+.brand {
+	display: flex;
+	justify-content: space-around;
+}
+
+.brand-img {
+	width: 50px;
+	height: 50px;
+}
+
+.brand-name {
+	margin-top: 15px;
+	color: white;
+	font-size: 30px;
+	/*font-family : Neuropol-Regular;*/
+}
+
+.fa-bars {
+	color: white;
+}
+
+.cust-item {
+	padding: 10px 20px;
+}
+
+.cust-link {
+	display: inline-block;
+	padding: 4px;
+	color: #fff;
+	border: 2px solid transparent;
+	font-size: 24px;
+}
+
+.cust-item:hover .cust-link {
+	border: 2px solid rgb(255,204,0);
+	border-radius: 5px;
+	color: #fff;
+}
+
+/* banner */
+.bg-secod {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.bg-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(10,60,93);
+	opacity: 0.3;
+}
+
+.banner-txt {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.banner-txt h2 {
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.btn-group {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+.btn {
+	padding: 10px 20px;
+	margin: 10px;
+	background-color: rgb(255,204,0);
+	border-radius: 10px;
+	color: rgb(10,60,93);
+	font-size: 26px;
+}
+
+.toggle-btn-cls {
+	margin: auto;
+	width: 10%;
+	border: 5px solid rgb(255,204,0);
+	border-radius: 15px;
+}
+
+#on-btn-id {
+	visibility: hidden;
+}
+
+#bg_banner-1 {
+	opacity: 1;
+}
+
+.t-btn {
+	display: inline-block;
+	margin: 3px;	
+	width: 40px;
+	height: 40px;
+	border: 5px solid rgb(255,204,0);	
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.off-btn {
+	background-color: rgb(255,204,0); 
+}
+
+/*We Design & Bulid*/
+.we-design h2,
+.changing-content h2 {
+	margin-top: 40px;
+	font-size: 34px;
+}
+
+.design {
+	color: rgb(10,60,93);
+}
+
+.we-design p {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.btn-grp {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.read-btn {
+	padding: 5px 20px;
+	background-color: rgb(255,204,0);
+	border-radius: 6px;
+	color: rgb(10,60,93);
+	font-size: 20px;
+}
+
+
+/* Changing */
+.bg-trinary {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: rgb(255,204,0);
+}
+
+.img-thumbnail {
+	background-color: transparent;
+	border: 2px solid rgb(95,95,97);
+}
+
+.changing-content p {
+	margin-top: 30px;
+	color: rgb(95,95,97);
+	font-size: 19px;
+	text-align: left;
+}
+
+.btn-grps {
+	margin-top: 30px;
+	text-align: right;
+}
+
+.change-read-more-btn/*read-more-btn*/ {
+	padding: 10px 20px;
+	background-color: rgb(10,60,93);
+	border-radius: 6px;
+	color: rgb(255,204,0);
+	font-size: 20px;
+}
+
+/* about */
+.about {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: rgb(10,60,93);
+}
+
+.about-inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-icon {
+	width: 13%;
+	height: 13%;
+}
+
+.about-content {
+	width: 83%;
+}
+
+.about-content h3 {
+	font-size: 34px;
+	color: rgb(255,204,0);
+}
+
+.about-content p {
+	margin-top: 20px;
+	color: #fff;
+	font-size: 17px;
+}
+
+/* Provide */
+
+.provide {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 720px;
+	background-image: url('./../images/bg-banner-4.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: grey;
+}
+
+.provide-container {
+	position: relative;
+	top: 5%;
+	width: 80%;
+	/*background-color: hotpink;*/
+}
+
+.prov-cont {
+	padding-top: 50px;
+}
+
+.provide-inner {
+	/*margin-top: 30px;*/
+	/*border: 3px solid rgb(255,255,255,1);*/
+}
+
+.provide-icon {
+	padding-top: 30px;
+	margin-bottom: 10px;
+	width: 80%;
+	text-align: center;
+	/*border: 2px solid blue;*/
+}
+
+.provide-icon img {
+	width: 14%;
+}
+
+.provide-title h3 {
+	margin-bottom: 50px;
+	width: 90%;
+	color: rgb(255,204,0);
+	font-size: 28px;
+	/*text-align: center;*/
+	/*border: 2px solid blue;*/
+}
+
+.provide-content p {
+	color: #fff;
+	font-size: 19px;
+	word-spacing: 6px;
+	line-height: 1.4;
+}
+
+.provide-inner-header {
+	font-size: 36px;
+	color: #fff;
+}
+
+.provide-inner-txt {
+	margin-top: 30px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+.provi-right-title {
+	color: rgb(255,204,0);
+}
+
+.prov-right-cont {
+	margin-top: 50px;
+}
+
+.provider-img {
+	margin-top: 70px;
+}
+
+/* New Project */
+.new-project {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	background-color: rgb(246,246,246);
+}
+
+.new-project-inner .provd-img {
+	width: 85%;
+}
+
+.new-project-title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+
+.new-project-title h3 {
+	text-shadow: 1px 1px 1px #000;
+}
+
+.new-project-txt {
+	color: rgb(101,101,101);
+	font-size: 14px;
+}
+
+.new-project-inner h2 {
+	font-size: 40px;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.prim-color {
+	color: rgb(255,204,0);
+}
+
+.secod-color {
+	color: rgb(10,60,93);
+}
+
+.appont-form {
+	margin-top: 30px;
+}
+
+.form-ele {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.form-btn {
+	margin-top: 30px;
+	text-align: right;
+}
+
+.form-inp {
+	margin-top: 10px;
+}
+
+.appont-btn {
+	padding: 5px 10px;
+	background-color: rgb(10,60,93);
+	border-radius: 5px;
+	color: rgb(255,204,0);
+}
